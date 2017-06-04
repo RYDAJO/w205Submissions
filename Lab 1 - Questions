@@ -76,9 +76,9 @@ https://aws.amazon.com/ec2/pricing/reserved-instances/
 
 Q4: List the names of four software packages installed on the UCB AMI
 
--
--
--
+-iPython
+-pgxl-deployment-tools
+-streamparse
 -
 
 
