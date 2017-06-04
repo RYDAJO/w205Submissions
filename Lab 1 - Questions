@@ -5,21 +5,21 @@ Provide the answers to the following questions in a file called Lab1-answers.txt
 
 ##Q1: What is the difference between EBS and S3?
 
+reference: https://www.cloudberrylab.com/blog/amazon-s3-vs-amazon-ebs/
+[I have left this verbatim to avoid wasting time paraphrasing when i need to 
+prioritize getting caught up! :) ]
 
 Amazon S3 and Amazon EBS are different types of storage designed by Amazon Web Services. 
 Amazon S3 represents an object storage for data that deals with user files like Google Docs 
 does it (flat file structure). While Amazon EBS is an example of a block level storage similar 
-to your desktop’s drive or virtual disk in virtualized environments. Both of them have pros and
-cons as they are crafted for different purposes and requirements. This article explains when to 
-use Amazon S3 or Amazon EBS.
+to your desktop’s drive or virtual disk in virtualized environments. 
 
 What is Amazon S3?
 
 Amazon S3 stores data as objects in a flat environment (without a hierarchy). Each object (file) 
 in the storage contains a header with associated sequence of bytes from 0 byte to 5 TB. Objects
 in Amazon S3 are associated with a unique identifier (key), so access to them can be obtained 
-through web requests from anywhere. For example, any authorized node in your own datacenter or 
-external user can get access to any object in your Amazon S3 bucket.
+through web requests from anywhere. 
 
 Amazon S3 also allows to host static website content. You can get access to it either from your 
 Amazon S3 bucket or through content delivery network AWS CloudFront.
@@ -43,25 +43,17 @@ another EC2 instance or keep it in a standby mode. It’s important as once you 
 Amazon EBS, it can’t be easily scaled. If you need more storage space, you will need to buy and configure 
 a new volume of a bigger size.
 
-There are three types of volumes in Amazon EBS. To understand the difference, you need to know what IOPS 
-is.  “IOPS” stands for input/output operations per second or, put it simply, the maximum amount of 
-read/write operations you are able to perform per second. To choose the right Amazon EBS volume type you
-need to know IOPS requirements for your application.
 
-reference: https://www.cloudberrylab.com/blog/amazon-s3-vs-amazon-ebs/
+##Q2: When would you consider a cloud infrastructure for your data science tasks?
 
-
-
-Q2: When would you consider a cloud infrastructure for your data science tasks?
+When data science projects require access to servers, storage space, and databases, cloud computing provides 
+an affordable alternative to large capital investments in local hardware and an ability to scale your resources 
+dynamically to meet your capacity needs. As a result, this allows you to experiment iteratively with little overhead while 
+fine-tuning applications and projects. 
 
 
 
-
-
-
-
-
-Q3: What is the difference between spot instances and reserved instances?
+##Q3: What is the difference between spot instances and reserved instances?
 
 EC2 spot instances allow you to bid for capacity. As supply and demand for spot instances continuously set their cost, 
 your instance is only lauched when your bid price exceeds the market value of the spot instance. It will continue to 
@@ -71,15 +63,12 @@ help reduce cost when task are not time sensitive and can withstand interruption
 If your application is not tolerant to interruption, Reserved instances are often a better alternative. Unlike on-demand 
 instances, reserve instances allow users to make capacity reservations when utilization is predictable.
 
-https://aws.amazon.com/ec2/spot/
-https://aws.amazon.com/ec2/pricing/reserved-instances/
-
-Q4: List the names of four software packages installed on the UCB AMI
+##Q4: List the names of four software packages installed on the UCB AMI
 
 -iPython
 -pgxl-deployment-tools
 -streamparse
--
+-hadoop
 
 
 
