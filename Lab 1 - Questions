@@ -1,0 +1,85 @@
+##Lab 1:
+
+Provide the answers to the following questions in a file called Lab1-answers.txt
+
+
+##Q1: What is the difference between EBS and S3?
+
+
+Amazon S3 and Amazon EBS are different types of storage designed by Amazon Web Services. 
+Amazon S3 represents an object storage for data that deals with user files like Google Docs 
+does it (flat file structure). While Amazon EBS is an example of a block level storage similar 
+to your desktop’s drive or virtual disk in virtualized environments. Both of them have pros and
+cons as they are crafted for different purposes and requirements. This article explains when to 
+use Amazon S3 or Amazon EBS.
+
+What is Amazon S3?
+
+Amazon S3 stores data as objects in a flat environment (without a hierarchy). Each object (file) 
+in the storage contains a header with associated sequence of bytes from 0 byte to 5 TB. Objects
+in Amazon S3 are associated with a unique identifier (key), so access to them can be obtained 
+through web requests from anywhere. For example, any authorized node in your own datacenter or 
+external user can get access to any object in your Amazon S3 bucket.
+
+Amazon S3 also allows to host static website content. You can get access to it either from your 
+Amazon S3 bucket or through content delivery network AWS CloudFront.
+
+As compared to Amazon EBS, the process of requesting an object in Amazon S3 is slower, 
+but Amazon S3 is a highly scalable storage service with 99,999999999% data durability. 
+It means that you have very little chances to lose your data or reach maximum storage capacity. 
+Thus, it’s better to use it to store and deliver objects that don’t require a lot of read/write 
+operations, for example, backups. Third-party solutions like CloudBerry Backup helps to automate 
+data backup and recovery using Amazon S3.
+
+What is Amazon EBS?
+
+Amazon EBS stores data as blocks of the same size and organizes them through the hierarchy similar 
+to a traditional file system. EBS is not a standalone storage service like Amazon S3 so you can use 
+it only in combination with Amazon EC2, a cloud computing service by AWS.
+
+Amazon EBS is designed to store data in volumes of a provisioned size attached to an Amazon EC2 instance, 
+similar to a local disk drive on your physical server. Amazon EBS only allows to attach the volume to 
+another EC2 instance or keep it in a standby mode. It’s important as once you configure the volume in 
+Amazon EBS, it can’t be easily scaled. If you need more storage space, you will need to buy and configure 
+a new volume of a bigger size.
+
+There are three types of volumes in Amazon EBS. To understand the difference, you need to know what IOPS 
+is.  “IOPS” stands for input/output operations per second or, put it simply, the maximum amount of 
+read/write operations you are able to perform per second. To choose the right Amazon EBS volume type you
+need to know IOPS requirements for your application.
+
+reference: https://www.cloudberrylab.com/blog/amazon-s3-vs-amazon-ebs/
+
+
+
+Q2: When would you consider a cloud infrastructure for your data science tasks?
+
+
+
+
+
+
+
+
+Q3: What is the difference between spot instances and reserved instances?
+
+EC2 spot instances allow you to bid for capacity. As supply and demand for spot instances continuously set their cost, 
+your instance is only lauched when your bid price exceeds the market value of the spot instance. It will continue to 
+run until you stop it or the spot price equals or exceeds the bid price, which ever comes first. These instances are 
+help reduce cost when task are not time sensitive and can withstand interruption. 
+
+If your application is not tolerant to interruption, Reserved instances are often a better alternative. Unlike on-demand 
+instances, reserve instances allow users to make capacity reservations when utilization is predictable.
+
+https://aws.amazon.com/ec2/spot/
+https://aws.amazon.com/ec2/pricing/reserved-instances/
+
+Q4: List the names of four software packages installed on the UCB AMI
+
+-
+-
+-
+-
+
+
+
