@@ -1,3 +1,13 @@
+[w205@ip-172-31-37-3 ~]$ hdfs dfs -ls /user
+Found 8 items
+drwxr-xr-x   - mapred  supergroup          0 2017-06-05 01:57 /user/history
+drwxrwxrwx   - hive    supergroup          0 2017-06-05 01:58 /user/hive
+drwxrwxrwx   - hue     supergroup          0 2017-06-05 01:58 /user/hue
+drwxrwxrwx   - jenkins supergroup          0 2017-06-05 01:57 /user/jenkins
+drwxrwxrwx   - oozie   supergroup          0 2017-06-05 01:59 /user/oozie
+drwxrwxrwx   - root    supergroup          0 2017-06-05 01:58 /user/root
+drwxr-xr-x   - hdfs    supergroup          0 2017-06-05 02:01 /user/spark
+drwxr-xr-x   - w205    supergroup          0 2017-06-05 02:01 /user/w205
 
 
 Configured Capacity: 10568916992 (9.84 GB)
