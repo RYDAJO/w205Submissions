@@ -1,0 +1,36 @@
+
+
+Configured Capacity: 10568916992 (9.84 GB)
+Present Capacity: 5147320320 (4.79 GB)
+DFS Remaining: 5003264000 (4.66 GB)
+DFS Used: 144056320 (137.38 MB)
+DFS Used%: 2.80%
+Under replicated blocks: 0
+Blocks with corrupt replicas: 0
+Missing blocks: 0
+Missing blocks (with replication factor 1): 0
+
+-------------------------------------------------
+Live datanodes (1):
+
+Name: 127.0.0.1:50010 (localhost)
+Hostname: ip-172-31-37-3.ec2.internal
+Decommission Status : Normal
+Configured Capacity: 10568916992 (9.84 GB)
+DFS Used: 144056320 (137.38 MB)
+Non DFS Used: 5421596672 (5.05 GB)
+DFS Remaining: 5003264000 (4.66 GB)
+DFS Used%: 1.36%
+DFS Remaining%: 47.34%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 2
+Last contact: Mon Jun 05 02:39:32 UTC 2017
+
+
+[root@ip-172-31-37-3 ~]# 
+[root@ip-172-31-37-3 ~]# 
+[root@ip-172-31-37-3 ~]# 
