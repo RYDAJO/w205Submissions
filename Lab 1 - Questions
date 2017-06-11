@@ -6,8 +6,8 @@ Provide the answers to the following questions in a file called Lab1-answers.txt
 ##Q1: What is the difference between EBS and S3?
 
 reference: https://www.cloudberrylab.com/blog/amazon-s3-vs-amazon-ebs/
-[I have left this verbatim to avoid wasting time paraphrasing when i need to 
-prioritize getting caught up! :) ]
+[For the first question only I have left this verbatim to avoid wasting time paraphrasing when i need to 
+prioritize getting caught up! it seem very technical and not qualitative. ]
 
 Amazon S3 and Amazon EBS are different types of storage designed by Amazon Web Services. 
 Amazon S3 represents an object storage for data that deals with user files like Google Docs 
