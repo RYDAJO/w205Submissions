@@ -1,3 +1,7 @@
+
+
+##Question 1:  List the HDFS contents of /user
+
 [w205@ip-172-31-36-179 ~]$ hdfs dfs -ls /user
 Found 8 items
 drwxr-xr-x   - mapred  supergroup          0 2017-06-06 02:17 /user/history
@@ -8,6 +12,9 @@ drwxrwxrwx   - oozie   supergroup          0 2017-06-06 02:19 /user/oozie
 drwxrwxrwx   - root    supergroup          0 2017-06-06 02:18 /user/root
 drwxr-xr-x   - hdfs    supergroup          0 2017-06-06 02:21 /user/spark
 drwxr-xr-x   - w205    supergroup          0 2017-06-06 02:21 /user/w205
+
+
+##Question 2: HDFS admin report
 
 
 Configured Capacity: 105555197952 (98.31 GB)
